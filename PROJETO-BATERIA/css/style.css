@@ -1,0 +1,75 @@
+/* RESET DO CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*DECLARANDO DE VARIÁVEIS*/
+html{
+    --title-color: #fff;
+    --base-color: #333;
+    --base-color-secund: #00ff7f;
+    /* TRANSFORMANDO "PX" EM "REM" */
+    /* font-size: 62.5% */
+}
+/*APLICANDO O FLEXBOX */
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*VISUALIZAÇÃO DA TELA*/
+    min-height: 100vh;
+
+    /* FORMATAÇÃO */
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--base-color);
+}
+
+/* TÍTULO DA PÁGINA */
+h1{
+color: var(--base-color);
+margin: 2rem;
+font-size: 2rem;
+}
+
+/* APLICANDO O GRID NA PÁGINA */
+.keys{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.key{
+    width: 8rem;
+    height: 8rem;
+    border: 0.2rem solid var(--title-color);
+    color: var(--title-color);
+
+    /*APLICANDO FLEXBOX DENTRO DAS LETRAS*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* FORMATAÇÃO DAS LETRAS */
+    font-size: 3rem;
+    font-weight: bold;
+}
+/* CAIXA DA COMPOSIÇÃO */
+composer{
+    width: 26rem;
+    margin-top: 2rem;
+}
+
+/*CAIXA INPUT */
+.composer #input{
+    width: 100%;
+    outline: none;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+}
+
+
+
+
